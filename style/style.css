@@ -1,0 +1,298 @@
+body, html
+{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+/* CONTAINER */
+.container
+{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(6, 1fr);
+    height: 100vh;
+}
+/* CONTAINER */
+
+/* SETTING COLORS */
+.header
+{
+    background-color: #638475;
+    grid-column: 2;
+}
+
+.sidebar
+{
+    background-color: #F7F0F5;
+    grid-column: 1;
+    grid-row: 1/-1;
+}
+
+.main-content
+{
+    grid-row: 2/7;
+}
+
+/* SETTING COLORS */
+
+/* HEADER */
+.header
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 50px;
+}
+
+.top
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.search
+{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+}
+
+#search_bar
+{
+    height: 35%;
+    border-radius: 20px;
+    border:none;
+    align-self: center;
+    width: 100%;
+}
+
+.other
+{
+    display: grid;
+    grid-template-columns: 40px 90px 140px;
+    justify-content: end;
+    padding-right: 50px;
+}
+
+.search_logo
+{
+    width: 40px;
+    height: 40px;
+    background-image: url("images/magnify.svg");
+    display: inline-block;
+    align-self: center;
+    justify-self: end;
+}
+
+.alert
+{
+    width: 40px;
+    height: 40px;
+    background-image: url("images/bell.svg");
+    display: inline-block;
+    align-self: center;
+    justify-self: end;
+}
+
+.icon
+{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 60px;
+    align-self: center;
+    justify-self: end;
+}
+
+
+.user
+{
+    font-size: 30px;
+    align-self: center;
+    justify-self: end;
+}
+
+
+.bottom
+{
+    display: grid;
+    grid-template-columns: 80px 300px 1fr;
+}
+
+.test
+{
+    grid-column: 1;
+    align-self: center;
+    justify-self: start;
+}
+
+.intro
+{
+    grid-column: 2;
+}
+
+ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.buttons
+{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-column: 3;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    padding-right: 50px;
+}
+
+.buttons button
+{
+    background-color: #DECBB7;
+    border: none;
+    height: 30px;
+    border-radius: 15px;
+    font-weight: bolder;
+}
+
+/* SIDEBAR */
+.sidebar h2
+{
+    padding-left: 20px;
+}
+span, li
+{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+}
+
+span p, li p
+{
+    font-size: 20px;
+}
+
+span div, li div
+{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    align-self: center;
+    justify-self: center;
+}
+
+.house
+{
+    background-image: url("images/home.svg");
+}
+
+.profile
+{
+    background-image: url("images/account.svg");
+}
+
+.message
+{
+    background-image: url("images/message.svg");
+}
+
+.history
+{
+    background-image: url("images/clock.svg");
+}
+
+.task
+{
+    background-image: url("images/content-paste.svg");
+}
+
+.community
+{
+    background-image: url("images/account-group.svg");
+}
+
+.setting
+{
+    background-image: url("images/cog-outline.svg");
+}
+
+.support
+{
+    background-image: url("images/help-box-outline.svg");
+}
+
+.privacy
+{
+    background-image: url("images/shield.svg")
+}
+
+
+.bottom_link
+{
+    margin-top: 50px;
+}
+
+
+/* MAIN CONTENT */
+
+.title
+{
+    color: white;
+}
+
+.main-content
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    height: 93%;
+    max-height: 100%;
+    padding: 20px;
+}
+
+.cards
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90%;
+    gap: 10px;
+}
+
+.ann-trend
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    max-height: 100%;
+    padding-right: 20px;
+}
+
+.card
+{
+    background-color: white;
+    border-radius: 25px;
+}
+
+.card2
+{
+    background-color: white;
+    border-radius: 25px;
+}
+
+.card3
+{
+    background-color: white;
+    border-radius: 25px;
+}
+
+.card3 h4
+{
+    font-size: 10px;
+}
+
